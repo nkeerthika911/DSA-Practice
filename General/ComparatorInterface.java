@@ -11,10 +11,10 @@ class Main {
                 }
                 else if(a[0]==b[0]){
                     if(a[1]>b[1]) return 1;
-                    else return -1; // No swap
+                    else return 0; // Equal
                 }
                 else{
-                    return -1;
+                    return -1; // No swap
                 }
             }
         };

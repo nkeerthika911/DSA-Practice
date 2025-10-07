@@ -1,4 +1,4 @@
-// SPARSE Table
+// SPARSE TABLE
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -25,7 +25,7 @@ int main(){
         table[0][i]=arr[i];
     }
     for(int i=1;i<lg;i++){
-        for(int j=0;j<n;j++){
+        for(int j=0;j<n-(1<<i)+1;j++){
             if(j+(1<<i-1)<n){
                 table[i][j]=min(table[i-1][j],table[i-1][j+(1<<(i-1))]);
             }

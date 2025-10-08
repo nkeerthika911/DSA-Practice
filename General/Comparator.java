@@ -14,11 +14,12 @@ class Main {
                     i++;
                 }
                 if(i==Math.min(a.length(),b.length())){
-                    if(a.length()>b.length()){
+                    if(a.length()==b.length()) return 0;
+                    else if(a.length()>b.length()){
                         return 1;
                     }
                     else{
-                        return 0;
+                        return -1;
                     }
                 }
                 else{

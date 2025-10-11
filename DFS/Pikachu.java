@@ -23,7 +23,7 @@ public class Pikachu{
         if(nx>-1 && nx<R && ny>-1 && ny<C && grid[nx][ny]!='#'){
             int res = dfs(grid,nx,ny,move,dir,dirIdx,turn,idx+1,R,C,visited);
             if(res==1) return 1;
-    }
+        }
         return 0;
     }
 	public static void main(String[] args){
@@ -52,6 +52,11 @@ public class Pikachu{
                 }
             }
         }
-        System.out.println(count);
+        if(count==0){
+            System.out.print("Impossible");
+        }
+        else{
+            System.out.print(count);
+        }
     }
 }
